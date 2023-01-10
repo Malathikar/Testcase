@@ -1,8 +1,7 @@
-const helpers = require("../runtime/helpers");
-
+const helpers = require("../runtime/helpers")
 module.exports = function () {
 
-    this.Given(/^ I am on the McDonald page$/, function () {
+    this.Given(/I am on the mcdonald page$/, function () {
         return helpers.loadPage(page.mcdonald.url);
     });
 

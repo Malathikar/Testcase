@@ -4,20 +4,24 @@ module.exports = {
     url: 'http://www.mcdonalds.com/',
 
     elements: {
-        OrderNow: '//*[@id="button-ordernow"]',
-        McApplmage: '//*[@id="ui-id-1"]/form/div[2]/fieldset/ul/li[1]/label/div[1]/img'
+        MyMcdonaldsreward: '//*[@id="container-1e52aa8d39"]/div/div/div/div/div[2]/div/div[2]/div/nav/ul/li[3]/a',
+        //*[@id="container-1e52aa8d39"]/div/div/div/div/div[2]/div/div[2]/div/nav/ul/li[3]/a
+        MyMcdonald: '//*[@id="teaser-22e451c16e"]/div/div/div[1]/h2'
   
     },
     clickElement: async function(objectKey) {
         var selector = page.mcdonald.elements[objectKey];
-        await driver.sleep(2000);
+        await driver.sleep(5000);
         return driver.findElement(By.xpath(selector)).click();
     },
-    elementExists: async function(objectKey) {
+      elementExists: async function(objectKey) {
+        // eslint-disable-next-line no-console
         var selector = page.mcdonald.elements[objectKey];
 
         await driver.sleep(5000);
+       // driver.findElement(By.id("fruits"));
         return driver.findElement(By.xpath(selector));
     },
+  
 
 };
