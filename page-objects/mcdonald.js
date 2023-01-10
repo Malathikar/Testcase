@@ -5,7 +5,7 @@ module.exports = {
 
     elements: {
         MyMcdonaldsreward: '//*[@id="container-1e52aa8d39"]/div/div/div/div/div[2]/div/div[2]/div/nav/ul/li[3]/a',
-        //*[@id="container-1e52aa8d39"]/div/div/div/div/div[2]/div/div[2]/div/nav/ul/li[3]/a
+       
         MyMcdonald: '//*[@id="teaser-22e451c16e"]/div/div/div[1]/h2'
   
     },
@@ -15,11 +15,11 @@ module.exports = {
         return driver.findElement(By.xpath(selector)).click();
     },
       elementExists: async function(objectKey) {
-        // eslint-disable-next-line no-console
+        
         var selector = page.mcdonald.elements[objectKey];
 
         await driver.sleep(5000);
-       // driver.findElement(By.id("fruits"));
+      
         return driver.findElement(By.xpath(selector));
     },
   
