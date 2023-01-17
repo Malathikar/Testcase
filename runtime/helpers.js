@@ -259,7 +259,7 @@ module.exports = {
     * @example
     *      helpers.selectByVisibleText('#country', 'Brazil');
     */
-    selectDropdownValueByVisibleText: async function (elementSelector, optionName) {
+     selectDropdownValueByVisibleText: async function (elementSelector, optionName) {
         var select = await helpers.waitForCssXpathElement(elementSelector);
         var selectElements = await select.findElements({ css: 'option' });
         var options = [];
