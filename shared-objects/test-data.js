@@ -4,5 +4,8 @@ module.exports = {
     customerName: "import-test-customerName",
     passwordCheck: "import-test-passwordCheck",
     fieldkeywords: "import-test-fieldkeywords",
-    Password: "import-test-pa**word1"
+    Password: "import-test-pa**word1",
+    search: "import-test-search",
+    loginEmail: "import-test-user1",
+        loginPassword: "import-test-passw**d"
 };
